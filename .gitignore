@@ -1,0 +1,55 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+venv/
+env/
+.env/
+.venv/
+pylib/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# Large datasets generated during preprocessing (can be regenerated with python preprocess.py)
+data/preprocessed_dataset*.npz
+data/*.grd
+data/*.gfc
+data/*.zip
+
+# Keep essential small benchmark pack and field data
+!data/gsvs17_benchmarks.npz
+!data/GSVS17_FieldData.xlsx
+!data/Colorado_GPSBM_v2.2_08Feb18.txt
+!data/Colorado_2019_*.isg
+!data/Colorado_gravity_data.dat
+
+# Operating System Files
+.DS_Store
+Thumbs.db
+desktop.ini
+
