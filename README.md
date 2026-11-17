@@ -13,21 +13,6 @@ This repository provides an open-source and independent replication of the study
 It implements the full end-to-end geodetic deep learning pipeline across the **Colorado 1-cm Geoid Experiment** ([ISG Project Repository](https://www.isgeoid.polimi.it/Projects/colorado_experiment.html)), combining heterogeneous terrestrial and airborne gravity datasets, official Forsberg `TC` Residual Terrain Model (RTM) grids, 2nd-order automatic differentiation for spherical Laplace and boundary ODE regularizations, and GSVS17 survey profile validation.
 
 ---
-
-## Table of Contents
-- [Executive Summary](#executive-summary)
-- [Key Replication Results](#key-replication-results)
-  - [Table 3: Absolute Geoid Errors on 222 GSVS17 Benchmarks](#table-3-absolute-geoid-errors-on-222-gsvs17-benchmarks)
-  - [Table 4: Differential Geoid Slope RMS Across 12 Baseline Bins](#table-4-differential-geoid-slope-rms-across-12-baseline-bins)
-- [Architecture & Mathematical Formulation](#architecture--mathematical-formulation)
-- [In-Depth Forensic Discrepancy Analysis](#in-depth-forensic-discrepancy-analysis)
-- [Repository Structure](#repository-structure)
-- [Quickstart: Instant Benchmark Evaluation](#quickstart-instant-benchmark-evaluation)
-- [End-to-End Workflow: From Scratch](#end-to-end-workflow-from-scratch)
-- [Citation](#citation)
-- [License](#license)
-
----
 ## Architecture & Mathematical Formulation
 
 ```
@@ -149,27 +134,6 @@ Executes the full pipeline, loads verified baselines, trains PINN, and generates
 ```bash
 python replicate.py --epochs 1000
 ```
-
----
-
-## Citation
-
-If you use this replication codebase or our findings in your research, please cite the original study and this replication:
-
-```bibtex
-@article{jiang2026physics,
-  title={Physics-informed neural networks for geoid modeling},
-  author={Jiang, Tao and Tu, Zejie and Li, Jiancheng},
-  journal={Journal of Geodesy},
-  volume={100},
-  number={4},
-  pages={1--22},
-  year={2026},
-  publisher={Springer},
-  doi={10.1007/s00190-025-02017-6}
-}
-```
-
 ---
 
 ## License
